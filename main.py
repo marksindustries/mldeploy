@@ -29,3 +29,8 @@ async def getData(item:ScoreItem):
     y = model.predict(data)
 
     return {'prediction':int(y)}
+
+
+@app.get("/")
+async def get():
+    return {"hello":"world"}
